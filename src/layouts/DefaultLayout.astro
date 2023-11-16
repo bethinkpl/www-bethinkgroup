@@ -1,0 +1,30 @@
+---
+import '@fontsource/rubik/400.css';
+import '@fontsource/rubik/700.css';
+import '@fontsource/rubik/900.css';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import DefaultHead from '../components/DefaultHead.astro';
+import Header from '../components/Header.vue';
+import Footer from '../components/Footer.vue';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<DefaultHead title={title} description={description} />
+	</head>
+	<body class="bg-canvas text-text">
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
