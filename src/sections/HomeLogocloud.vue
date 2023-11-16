@@ -33,40 +33,33 @@
 				Read more about our projects
 			</h2>
 			<div
-				class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
+				class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:gap-x-10 lg:mx-0 lg:max-w-none"
 			>
 				<img
 					class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-					src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
-					alt="Transistor"
+					src="https://wiecejnizlek.pl/wp-content/uploads/2019/01/normal.svg"
+					alt="Więcej niż LEK"
 					width="158"
 					height="48"
 				/>
 				<img
 					class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-					src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-					alt="Reform"
+					src="https://wiecejnizmatura.pl/wp-content/uploads/2022/05/img-1.png"
+					alt="Więcej niż Matura"
 					width="158"
 					height="48"
 				/>
 				<img
 					class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-					src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-					alt="Tuple"
-					width="158"
-					height="48"
-				/>
-				<img
-					class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-					src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-					alt="SavvyCal"
+					src="https://twojdyzur.pl/wp-content/uploads/2019/04/Logo.svg"
+					alt="Twój Dyżur"
 					width="158"
 					height="48"
 				/>
 				<img
 					class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-					src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-					alt="Statamic"
+					src="https://najprosciejmowiac.pl/wp-content/uploads/2023/07/logo.png"
+					alt="Najprościej Mówiąc"
 					width="158"
 					height="48"
 				/>

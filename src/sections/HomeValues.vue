@@ -2,7 +2,7 @@
 	<!-- Image section -->
 	<div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
 		<img
-			src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+			src="https://bethink.space/wp-content/uploads/2021/12/zdjecia_Bethink064-scaled.jpg"
 			alt=""
 			class="aspect-[5/2] w-full object-cover xl:rounded-3xl"
 		/>
@@ -15,8 +15,7 @@
 				Our values
 			</h2>
 			<p class="mt-6 text-lg leading-8 text-gray-600">
-				Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
-				cupiditate veritatis in accusamus quisquam.
+				The success we've seen is based firmly on our core values.
 			</p>
 		</div>
 		<dl
@@ -33,34 +32,34 @@
 <script setup lang="ts">
 	const values = [
 		{
-			name: 'Be world-class',
+			name: 'Evidence-based teaching',
 			description:
-				'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
+				'Hype is dangerous. It often promotes a solution that is not beneficial to students. We base our teaching methodology on evidence based practices and latest research.',
 		},
 		{
-			name: 'Share everything you know',
+			name: 'Think, say and do the same',
 			description:
-				'Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.',
+				'Integrity between thoughts, speech and actions is the fundamental principle we follow. We embrace healthy conflict of ideas and prioritize truth over comfort.',
 		},
 		{
-			name: 'Always learning',
+			name: 'Growth mindset',
 			description:
-				'Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.',
+				'We treat our mistakes as an opportunity to learn. Always asking "Why?", but never seeking scape goats, we try to understand our failures and be wiser in the future. ',
 		},
 		{
-			name: 'Be supportive',
+			name: 'Effective collaboration',
 			description:
-				'Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.',
+				'We value teamwork, where diverse perspectives are respected. Effective collaboration is core, fostering a culture of shared goals and celebrating collective achievements.',
 		},
 		{
-			name: 'Take responsibility',
+			name: 'Full ownership',
 			description:
-				'Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.',
+				"More than responsibility, it's a commitment to excellence. We empower team members to take initiative, make decisions, and be accountable. This instills pride and dedication, ensuring each contributes to the company's success.",
 		},
 		{
-			name: 'Enjoy downtime',
+			name: 'Caring about others',
 			description:
-				'Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.',
+				"At our core is genuine concern for others' well-being. We cultivate empathy, kindness, and support, recognizing individual success is intertwined with team success. Caring is a guiding principle shaping our interactions.",
 		},
 	];
 </script>
