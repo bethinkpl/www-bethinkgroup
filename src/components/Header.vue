@@ -25,6 +25,7 @@
 					v-for="item in navigation"
 					:key="item.name"
 					:href="item.href"
+					:class="[isActive(item.href) ? 'text-teal-600' : '']"
 					class="text-sm font-semibold leading-6 text-gray-900"
 					>{{ item.name }}</a
 				>
@@ -66,9 +67,11 @@
 								v-for="item in navigation"
 								:key="item.name"
 								:href="item.href"
+								:class="[isActive(item.href) ? 'text-teal-600' : '']"
 								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-								>{{ item.name }}</a
 							>
+								{{ item.name }}
+							</a>
 						</div>
 						<div class="py-6">
 							<a
@@ -94,11 +97,18 @@
 	const CTA_TEXT = 'Join us';
 
 	const navigation = [
-		{ name: 'Our story', href: '/' },
-		{ name: 'Education', href: '/' },
-		{ name: 'Technology', href: '/' },
+		{ name: 'Our story', href: '/our-story' },
+		{ name: 'Education', href: '/education' },
+		{ name: 'Technology', href: '/technology' },
 		{ name: 'Blog', href: '/blog' },
 	];
 
 	const mobileMenuOpen = ref(false);
+
+	function isActive(path: string): boolean {
+		return (
+			path === window.location.pathname ||
+			path === window.location.pathname.replace(/\/$/, '')
+		);
+	}
 </script>

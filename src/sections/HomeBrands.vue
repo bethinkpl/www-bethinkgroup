@@ -58,8 +58,11 @@
 					<dd class="text-gray-600">
 						{{ project.description }}
 					</dd>
-					<a :href="project.website" target="_blank" class="text-sm font-bold"
-						>Visit website →</a
+					<a
+						:href="project.website"
+						target="_blank"
+						class="text-sm font-bold transition-all flex align-center gap-1 hover:gap-2"
+						><span>Visit website</span> <span>→</span></a
 					>
 				</dl>
 			</div>
