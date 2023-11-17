@@ -6,7 +6,7 @@
 			</h2>
 			<div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
 				<div class="lg:w-full lg:max-w-2xl lg:flex-auto">
-					<p class="text-xl leading-8 text-gray-600">
+					<p class="text-lg leading-8 text-gray-600">
 						Education → Freedom → Happiness
 					</p>
 					<div class="mt-10 max-w-xl text-base leading-7 text-gray-700">
@@ -46,8 +46,8 @@
 
 <script setup lang="ts">
 	const stats = [
-		{ label: 'Yearly active students', value: '10,000+' },
-		{ label: 'Average course satisfaction', value: '96%+' },
+		{ label: 'Yearly active students', value: '17,000+' },
+		{ label: 'Average course satisfaction', value: '93%+' },
 		{ label: 'Current headcount', value: '80+' },
 	];
 </script>
