@@ -2,6 +2,7 @@
 import '@fontsource/rubik/400.css';
 import '@fontsource/rubik/700.css';
 import '@fontsource/rubik/900.css';
+import { ViewTransitions } from 'astro:transitions';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import DefaultHead from '../components/DefaultHead.astro';
 import Header from '../components/Header.vue';
@@ -19,7 +20,9 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
 <html lang="en">
 	<head>
 		<DefaultHead title={title} description={description} />
+		<ViewTransitions />
 	</head>
+
 	<body class="bg-canvas text-text">
 		<Header client:only />
 		<main class="relative isolate z-0">

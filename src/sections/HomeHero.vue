@@ -54,7 +54,7 @@
 			<div class="relative mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
 				<img
 					class="mx-auto w-full max-w-lg drop-shadow-xl"
-					src="https://bethink.space/wp-content/uploads/2020/07/Il.-podstrona_O-nas.png"
+					src="https://res.cloudinary.com/bethink/image/upload/v1700505540/bethinkgroup__hero.png"
 					alt=""
 				/>
 			</div>

@@ -1,5 +1,5 @@
 ---
-import DefaultLayout from '../../layouts/DefaultLayout.astro';
+import Page from '../../layouts/Page.astro';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
@@ -8,22 +8,31 @@ const posts = (await getCollection('blog')).sort(
 );
 ---
 
-<DefaultLayout>
+<Page title="Blog">
 	<section>
-		<ul>
+		<ul class="flex flex-col gap-8">
 			{
 				posts.map((post) => (
 					<li>
-						<a href={`/blog/${post.slug}/`}>
-							<img width={720} height={360} src={post.data.heroImage} alt="" />
-							<h4 class="title">{post.data.title}</h4>
-							<p class="date">
-								<FormattedDate date={post.data.pubDate} />
-							</p>
+						<a href={`/blog/${post.slug}/`} class="relative w-full">
+							<img
+								width="100%"
+								height={360}
+								src={post.data.heroImage}
+								alt=""
+								class="rounded-lg object-cover"
+							>
+							</img>
+							<div class="absolute inset-0 rounded-lg flex flex-col bg-gradient-to-b from-black to-transparent">
+								<h2 class="text-white">{post.data.title}</h2>
+								<p class="text-white">
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+							</div>
 						</a>
 					</li>
 				))
 			}
 		</ul>
 	</section>
-</DefaultLayout>
+</Page>

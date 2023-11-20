@@ -106,9 +106,6 @@
 	const mobileMenuOpen = ref(false);
 
 	function isActive(path: string): boolean {
-		return (
-			path === window.location.pathname ||
-			path === window.location.pathname.replace(/\/$/, '')
-		);
+		return !!window.location.pathname.match(path);
 	}
 </script>
