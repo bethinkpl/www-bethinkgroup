@@ -1,5 +1,6 @@
 <template>
 	<div class="relative isolate -z-10 mb-32 sm:mb-48">
+		<a id="brands" class="absolute -top-24"></a>
 		<div
 			class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]"
 		>
@@ -29,12 +30,13 @@
 			</svg>
 		</div>
 		<div class="mx-auto max-w-7xl px-6 lg:px-8">
-			<div class="mx-auto max-w-2xl lg:mx-0">
+			<div class="mx-auto max-w-3xl lg:mx-0">
 				<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
 					Our brands
 				</h2>
 				<p class="mt-6 text-lg leading-8 text-gray-600">
-					The success we've seen is based firmly on our core values.
+					Bethink Group consists of several brands, with a few market leaders among
+					them.
 				</p>
 			</div>
 			<div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
