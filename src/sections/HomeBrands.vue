@@ -106,5 +106,12 @@
 			description:
 				'A space created for an online course on effective learning. Based on the latest scientific research and our methodology, the course helps people fall in love with learning.',
 		},
+		{
+			logo: 'https://klasa.io/images/klasa-logo-horizontal.svg',
+			name: 'Klasa',
+			website: 'https://klasa.io',
+			description:
+				'Our custom e-learning platform that utilizes atomic content - a revolutionary approach to creation of educational experiences with unique analytical capabilities.',
+		},
 	];
 </script>

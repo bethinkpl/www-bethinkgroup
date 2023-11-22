@@ -1,5 +1,5 @@
 <template>
-	<header class="sticky inset-x-0 top-0 z-50 bg-background/50 backdrop-blur-lg">
+	<header class="sticky inset-x-0 top-0 z-50 bg-background/60 backdrop-blur-lg">
 		<nav
 			class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
 			aria-label="Global"
@@ -20,7 +20,9 @@
 					<Bars3Icon class="h-6 w-6" aria-hidden="true" />
 				</button>
 			</div>
-			<div class="hidden lg:flex lg:gap-x-12">
+			<!-- <div class="hidden lg:flex lg:gap-x-12">
+			</div> -->
+			<div class="hidden lg:flex lg:flex-1 lg:gap-x-8 lg:justify-end">
 				<a
 					v-for="item in navigation"
 					:key="item.name"
@@ -29,11 +31,6 @@
 					class="text-sm font-semibold leading-6 text-gray-900"
 					>{{ item.name }}</a
 				>
-			</div>
-			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
-				<a href="#" class="text-sm font-semibold leading-6 text-gray-900">
-					{{ CTA_TEXT }}
-				</a>
 			</div>
 		</nav>
 		<Dialog
@@ -62,25 +59,16 @@
 				</div>
 				<div class="mt-6 flow-root">
 					<div class="-my-6 divide-y divide-gray-500/10">
-						<div class="space-y-2 py-6">
-							<a
-								v-for="item in navigation"
-								:key="item.name"
-								:href="item.href"
-								:class="[isActive(item.href) ? 'text-teal-600' : '']"
-								class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-							>
-								{{ item.name }}
-							</a>
-						</div>
-						<div class="py-6">
-							<a
-								href="#"
-								class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-							>
-								{{ CTA_TEXT }}
-							</a>
-						</div>
+						<div class="space-y-2 py-6"></div>
+						<a
+							v-for="item in navigation"
+							:key="item.name"
+							:href="item.href"
+							:class="[isActive(item.href) ? 'text-teal-600' : '']"
+							class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+						>
+							{{ item.name }}
+						</a>
 					</div>
 				</div>
 			</DialogPanel>
@@ -94,13 +82,13 @@
 
 	const COMPANY_NAME = 'Bethink Group';
 	const LOGO_URL = '/bethinkgroup__logo.png';
-	const CTA_TEXT = 'Join us';
 
 	const navigation = [
 		{ name: 'Our story', href: '/our-story' },
 		{ name: 'Education', href: '/education' },
 		{ name: 'Technology', href: '/technology' },
 		{ name: 'Blog', href: '/blog' },
+		{ name: 'Join us', href: '/jobs' },
 	];
 
 	const mobileMenuOpen = ref(false);
