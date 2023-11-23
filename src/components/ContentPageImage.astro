@@ -1,0 +1,15 @@
+---
+interface Props {
+	src: string;
+	caption: string;
+}
+
+const { src, caption } = Astro.props;
+---
+
+<div class="px-4">
+	<img src={src} alt={caption} class="w-full rounded-xl" />
+	<p class="-mt-6 mb-6 text-center text-xs text-gray-500">
+		{caption}
+	</p>
+</div>
