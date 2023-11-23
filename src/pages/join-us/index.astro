@@ -1,5 +1,30 @@
 ---
 import ContentPage from '../../layouts/ContentPage.astro';
+import PrimaryButton from '../../components/PrimaryButton.astro';
 ---
 
-<ContentPage title="Join us">Titletlet</ContentPage>
+<ContentPage title="Join us">
+	<p class="text-lg font-semibold">
+		Use your skills to transform lives of many people with education.
+	</p>
+	<p>
+		We're always looking forward to meeting people who want to combine work with mission.
+		If you're one of them, contact us even there are no open positions relevant to your
+		skillset.
+	</p>
+	<img
+		src="https://bethink.space/wp-content/uploads/2021/12/zdjecia_Bethink064-scaled.jpg"
+		alt=""
+		class="aspect-[5/2] w-full object-cover rounded-xl xl:rounded-3xl"
+	/>
+	<h2>Open positions</h2>
+	<div class="not-prose py-6 flex flex-col text-center">
+		<p class="text-lg font-semibold">Sorry, there are no open positions right now.</p>
+		<p class="mt-2">Let's be in touch, though!</p>
+		<p class="mt-4">
+			<PrimaryButton href="https://forms.gle/g3agz4oTdz7mPApH6" target="_blank">
+				Leave contact info
+			</PrimaryButton>
+		</p>
+	</div>
+</ContentPage>

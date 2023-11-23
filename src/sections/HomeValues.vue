@@ -1,10 +1,10 @@
 <template>
 	<!-- Image section -->
-	<div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+	<div class="mt-32 sm:mt-40 lg:mx-auto lg:max-w-7xl lg:px-8">
 		<img
 			src="https://bethink.space/wp-content/uploads/2021/12/zdjecia_Bethink064-scaled.jpg"
 			alt=""
-			class="aspect-[5/2] w-full object-cover xl:rounded-3xl"
+			class="aspect-[5/2] w-full object-cover lg:rounded-3xl"
 		/>
 	</div>
 
