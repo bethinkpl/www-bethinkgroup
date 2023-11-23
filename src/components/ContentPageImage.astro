@@ -2,13 +2,14 @@
 interface Props {
 	src: string;
 	caption: string;
+	classes?: string;
 }
 
-const { src, caption } = Astro.props;
+const { src, caption, classes } = Astro.props;
 ---
 
 <div class="px-4">
-	<img src={src} alt={caption} class="w-full rounded-xl" />
+	<img src={src} alt={caption} class:list={['w-full rounded-xl', classes ? classes : '']} />
 	<p class="-mt-6 mb-6 text-center text-xs text-gray-500">
 		{caption}
 	</p>

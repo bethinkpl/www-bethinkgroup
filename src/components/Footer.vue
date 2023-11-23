@@ -19,7 +19,7 @@
 	const footerNavigation = {
 		main: [
 			{ name: 'Blog', href: '/blog' },
-			{ name: 'Jobs', href: '/join-us' },
+			{ name: 'Join us', href: '/join-us' },
 			{
 				name: 'Follow us',
 				href: 'https://www.linkedin.com/company/bethinkgroup',

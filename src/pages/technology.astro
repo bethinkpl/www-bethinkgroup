@@ -1,151 +1,238 @@
 ---
+import { Image } from 'astro:assets';
 import ContentPage from '../layouts/ContentPage.astro';
+import ContentPageImage from '../components/ContentPageImage.astro';
+import Card from '../components/Card.astro';
+
+import logoVue from '../images/stack/Icon-Logo-Vue.svg';
+import logoTypeScript from '../images/stack/Icon-Logo-TypeScript.svg';
+import logoLaravel from '../images/stack/Icon-Logo-Laravel.svg';
+import logoNode from '../images/stack/Icon-Logo-Node-JS.svg';
+import logoGo from '../images/stack/Icon-Logo-Go.svg';
+import logoPython from '../images/stack/Icon-Logo-Python.svg';
+import logoCypress from '../images/stack/Icon-Logo-Cypress.svg';
+import logoArgo from '../images/stack/Icon-Logo-Argo.svg';
+import logoKubernetes from '../images/stack/Icon-Logo-Kubernetes.svg';
+import logoGoogleCloud from '../images/stack/Icon-Logo-Google-Cloud.svg';
+import logoGoogleBigQuery from '../images/stack/Icon-Logo-Google-BigQuery.svg';
+import logoMySQL from '../images/stack/Icon-Logo-MySQL.svg';
+
+const howWeAddressChallenges = [
+	{
+		title: 'Constant learning',
+		description:
+			'We prioritize constant learning, fostering personal growth by dedicating work time to reading books, attending courses, and participating in conferences. This commitment ensures that our team stays abreast of the latest developments, bringing fresh insights to our approach and refining our strategies in response to the evolving landscape of e-learning.',
+	},
+	{
+		title: 'Investing in systems',
+		description:
+			'Recognizing the evolution of our platform into a product development platform, we strategically shifted our focus to building flexible systems. This shift enables us to facilitate the development of more specific features and ensures scalability as we continue to grow and adapt to the dynamic needs of our users.',
+	},
+	{
+		title: 'High-seniority team',
+		description:
+			'Our high-seniority team is composed of specialists capable of solving a spectrum of problems end-to-end. This strategic composition ensures agility and efficiency in problem-solving, allowing us to navigate challenges swiftly and comprehensively, providing effective solutions to complex issues.',
+	},
+	{
+		title: 'Effective teamwork',
+		description:
+			'Effective teamwork is at the core of our approach. We are ready to experiment and test non-standard methods and processes to achieve the highest effectiveness. Going beyond traditional agile methodologies, we seek custom, lean solutions to deliver the most value to our users.',
+	},
+];
+
+const stack = [
+	{
+		src: logoVue,
+		alt: 'Logo of Vue',
+		title: 'Vue',
+	},
+	{
+		src: logoTypeScript,
+		alt: 'Logo of TypeScript',
+		title: 'TypeScript',
+	},
+	{
+		src: logoLaravel,
+		alt: 'Logo of Laravel',
+		title: 'Laravel',
+	},
+	{
+		src: logoNode,
+		alt: 'Logo of Node JS',
+		title: 'Node JS',
+	},
+	{
+		src: logoPython,
+		alt: 'Logo of Python',
+		title: 'Python',
+	},
+
+	{
+		src: logoGo,
+		alt: 'Logo of Go',
+		title: 'Go',
+	},
+
+	{
+		src: logoCypress,
+		alt: 'Logo of Cypress',
+		title: 'Cypress',
+	},
+	{
+		src: logoArgo,
+		alt: 'Logo of Argo CD',
+		title: 'Argo CD',
+	},
+
+	{
+		src: logoKubernetes,
+		alt: 'Logo of Kubernetes',
+		title: 'Kubernetes',
+	},
+	{
+		src: logoGoogleCloud,
+		alt: 'Logo of Google Cloud',
+		title: 'Google Cloud',
+	},
+	{
+		src: logoGoogleBigQuery,
+		alt: 'Logo of Google BigQuery',
+		title: 'Google BigQuery',
+	},
+	{
+		src: logoMySQL,
+		alt: 'Logo of MySQL',
+		title: 'MySQL',
+	},
+];
+
+const testimonials = [
+	{
+		name: 'Maciej Brencz',
+		role: 'Senior Software Engineer',
+		photo: 'https://res.cloudinary.com/bethink/image/upload/v1700725005/Photo-Maciej-Brencz-100x100_wdtup7.jpg',
+		text: `Joining Betink, I aimed to relive the startup atmosphere, discover new and exciting technological challenges, and shed the constraints associated with silos in a Big Corporation. I was not disappointed. We are pushing forward—our technological stack strengthens with each passing month, yet thankfully, the startup atmosphere, mutual camaraderie, and openness still permeate our daily work.`,
+	},
+	{
+		name: 'Igor Rogatty',
+		role: 'Tech lead',
+		photo: 'https://res.cloudinary.com/bethink/image/upload/v1700725005/Photo-Igor-Rogatty-100x100_vyrgbv.jpg',
+		text: `Since joining Bethink, I have witnessed continuous development. Our product is of increasingly better quality, and the challenges are becoming more intriguing. The team's atmosphere remains unchanged—we maintain a healthy distance from each other, and laughter is a constant companion. With our wealth of experience and commitment, work is an absolute pleasure.`,
+	},
+	{
+		name: 'Martyna Przygoda',
+		role: 'UX/UI Designer',
+		photo: 'https://res.cloudinary.com/bethink/image/upload/v1700725005/Photo-Martyna-Przygoda-100x100_qpfpff.jpg',
+		text: `As a UX designer, I dreamt of working in a place that offers growth, product awareness, and the feeling that my actions tangibly change someone's experiences. Bethink provides all of this and more. As an added bonus, it comes with fantastic people, a culture of openness and feedback, and a friendly atmosphere.`,
+	},
+];
 ---
 
 <ContentPage title="Technology">
+	<p class="text-lg font-semibold">
+		Technology is the cornerstone of Bethink's operations, propelling innovation and
+		shaping the future of e-learning. At the heart of our technological prowess is the
+		creation of Klasa, a custom platform that started as a solution for a single course and
+		has evolved into a multi-tenant application, navigating numerous scaling challenges
+		along its transformative journey.
+	</p>
+
+	<h2>Atomic Content</h2>
+
 	<p>
-		Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur placerat morbi, eros
-		laoreet facilisis pretium habitasse a porta ac. Varius maecenas a litora nunc mus
-		nascetur, nisl diam mollis molestie. Etiam velit dictumst leo pellentesque scelerisque
-		mi id, taciti blandit nam eu aenean cubilia, dui curae cras senectus parturient
-		faucibus. Nec venenatis class lectus pulvinar commodo hendrerit semper est placerat,
-		vestibulum justo natoque nascetur sem mollis mus risus, arcu vel quam habitasse potenti
-		condimentum fringilla pellentesque. Libero eleifend risus sapien accumsan elementum
-		natoque ligula nisl volutpat facilisi semper, suspendisse pretium cursus ad ante
-		aliquet diam id enim sociis.
+		A pivotal aspect of our technological approach is the implementation of Atomic Content.
+		This innovative strategy allows us to seamlessly reuse content across various contexts,
+		creating interconnected links that compose diverse and engaging learning experiences.
 	</p>
 
 	<p>
-		Proin quisque varius velit penatibus hendrerit aliquet pretium ullamcorper fermentum,
-		aenean mi odio sodales nulla libero turpis litora, ut blandit porttitor ultricies ac
-		interdum pulvinar mus. Nam sodales natoque in purus pharetra netus urna posuere,
-		praesent facilisi tortor erat tempus aenean tempor lobortis, tristique habitant
-		accumsan mi imperdiet ut facilisis. Suscipit suspendisse vehicula pellentesque ultrices
-		integer cubilia aliquet, laoreet dapibus feugiat cursus placerat mauris orci, ridiculus
-		vitae fames sollicitudin primis aenean. Duis taciti cras semper hendrerit neque magnis,
-		platea nec fermentum parturient fusce, vitae diam gravida inceptos euismod.
+		More than just content reuse, it provides students with a contextual space for asking
+		questions precisely where they arise, fostering a dynamic and interactive educational
+		environment. Additionally, the Atomic Content approach unlocks unique analytical
+		capabilities that enrich the learning process, offering insights that go beyond
+		traditional learning models.
+	</p>
+
+	<ContentPageImage
+		src="https://res.cloudinary.com/bethink/image/upload/v1700505540/bethinkgroup__hero.png"
+		caption="Atomic content approach enables content composition and contextual communication"
+		classes="max-w-[500px] mx-auto"
+	/>
+
+	<h2>Unique Challenges</h2>
+
+	<p>
+		Bethink's tech department excels in navigating unique challenges inherent in the realm
+		of e-learning technology. Prioritizing educational value is a nuanced task, requiring a
+		delicate balance between user and educational experiences.
 	</p>
 
 	<p>
-		Magna hendrerit sociosqu nullam nunc vivamus conubia viverra, habitant rhoncus diam
-		iaculis vel congue torquent, scelerisque dictum nostra cursus condimentum ullamcorper.
-		Hac litora sociosqu senectus lectus commodo vulputate habitant, curabitur nibh felis
-		non velit placerat tortor massa, lacus euismod ultricies inceptos luctus est. Habitasse
-		magna feugiat proin vehicula id lacinia senectus enim ante fermentum platea, eget nisl
-		congue metus ullamcorper vivamus potenti velit quis neque.
+		This demands the creation of intuitive interfaces that guide students toward choices
+		that may be more challenging but ultimately more enriching. Tracking users' progress
+		over time is a distinctive challenge that necessitates the management of substantial
+		data. This, in turn, leads to scaling challenges usually associated with platforms
+		experiencing much higher traffic.
 	</p>
 
 	<p>
-		Eleifend sagittis ultrices varius tempus porta suscipit dis ligula quis, cum torquent
-		sociosqu iaculis maecenas faucibus ultricies tempor tincidunt, at ridiculus platea
-		fames hac convallis fusce blandit. Litora faucibus sociis bibendum proin hac sagittis
-		vitae dictum, cras sem vulputate cursus rhoncus curae elementum varius, metus lacus
-		fusce aliquam non quisque laoreet. Torquent interdum fringilla duis habitant facilisi
-		eu dignissim tincidunt, potenti cubilia aliquet aenean metus pharetra nisl,
-		sollicitudin eget ultrices iaculis commodo euismod justo. Sociosqu pretium vestibulum
-		donec curae maecenas aliquet, imperdiet pulvinar curabitur sem dapibus convallis, nisi
-		ligula et tortor elementum. Ut vestibulum suspendisse consequat curae aenean tortor
-		mollis, felis porta rutrum facilisis sociis hac pharetra donec, quisque libero lobortis
-		nullam iaculis conubia. Penatibus donec aliquam netus enim vel luctus magnis ligula,
-		lacus eu commodo vivamus integer imperdiet parturient lectus, dui cras id habitasse
-		felis montes dignissim. Conubia accumsan duis quam congue inceptos lectus facilisis
-		lobortis pulvinar hendrerit, viverra consequat euismod suspendisse a sociosqu ridiculus
-		malesuada posuere, sociis placerat nascetur aenean sodales porta varius mus curabitur.
+		Moreover, supporting multi-tenancy for different brands adds another layer of
+		complexity. Each brand has its distinct visual language and audience needs, requiring a
+		system that balances flexibility and standardization, ensuring it responds to diverse
+		needs while remaining easy to maintain.
 	</p>
 
-	<p>
-		Nisl malesuada justo mollis penatibus venenatis gravida sociis sagittis dis orci,
-		pulvinar massa lacus diam sapien turpis facilisi odio inceptos torquent habitasse,
-		cubilia leo sociosqu etiam eu feugiat sem mi dapibus. Litora felis feugiat massa
-		tincidunt enim auctor vitae elementum, congue nisi vel in sagittis himenaeos mattis
-		nisl iaculis, per varius erat pellentesque curae ad diam. Gravida rutrum quam in
-		blandit nullam senectus justo ut erat hendrerit, dignissim hac luctus massa cras primis
-		imperdiet magna. Parturient urna est commodo massa eget lectus non congue himenaeos
-		morbi sodales, quis penatibus nunc pulvinar felis sapien litora nec mattis id, nulla
-		nisl porttitor sociis condimentum dis euismod ridiculus mus fermentum. Netus felis
-		curabitur ultrices nullam aliquet mattis vehicula eros diam dictumst turpis rutrum,
-		vitae sed justo maecenas non convallis nascetur parturient fames fermentum eu, cras
-		fringilla dui pulvinar faucibus nunc conubia libero urna aliquam curae. Himenaeos at
-		habitant semper phasellus ac pharetra netus, penatibus habitasse maecenas tincidunt
-		vulputate commodo magnis cum, platea pellentesque dictumst convallis tortor vel. Dui
-		per tempor eu praesent fermentum molestie elementum ac nascetur, vehicula nisi leo
-		montes feugiat lectus hendrerit porta libero, egestas facilisi ad sem cubilia lacinia
-		at risus. Risus nulla faucibus fermentum mi proin feugiat, mollis metus cubilia
-		molestie nibh laoreet interdum, dignissim dictumst eu enim ornare.
-	</p>
+	<h2>How We Address These Challenges</h2>
 
-	<p>
-		Iaculis fusce augue porttitor blandit potenti laoreet pretium, malesuada ante eget
-		penatibus egestas ullamcorper dignissim, turpis sodales auctor a rutrum dictum.
-		Dignissim libero nullam nisl urna quisque taciti egestas mollis, eros pulvinar enim
-		natoque consequat imperdiet proin, auctor conubia vel justo pretium tristique tellus.
-		Suspendisse orci quam risus tempor eleifend enim bibendum mi quis, non imperdiet
-		faucibus conubia tristique mauris accumsan auctor sodales, etiam vestibulum cras dis
-		ante pulvinar habitasse dictumst. Lectus tincidunt a vivamus venenatis metus semper eu
-		sociis molestie commodo, risus volutpat montes parturient luctus facilisis est
-		habitasse blandit, arcu mattis diam egestas per neque nullam sodales penatibus.
-		Inceptos facilisi dapibus duis sed mus habitant vitae penatibus, tellus nostra nullam
-		praesent ridiculus feugiat sagittis et fusce, tortor lectus semper curae quisque
-		lobortis est. Sem condimentum netus quis taciti nullam dictumst dui ac lacus, velit
-		curabitur eros eu purus nunc felis vehicula, facilisi elementum ut suscipit penatibus
-		nulla mi nisi. Potenti mauris id per rutrum egestas purus risus, scelerisque at
-		facilisis suscipit faucibus vivamus hac aenean, eros tempus habitasse fusce taciti
-		nascetur. Commodo malesuada sapien metus velit ullamcorper dui rutrum phasellus
-		eleifend donec at hendrerit, feugiat ultricies consequat cras risus urna sociosqu
-		pretium ut massa tristique, vestibulum integer justo dapibus sollicitudin cursus
-		cubilia aenean dignissim luctus pellentesque.
-	</p>
+	<div class="not-prose grid grid-cols-1 gap-6 md:grid-cols-2 lg:-mx-24">
+		{
+			howWeAddressChallenges.map((item) => (
+				<Card>
+					<p class="text-xl font-semibold">{item.title}</p>
+					<p>{item.description}</p>
+				</Card>
+			))
+		}
+	</div>
 
-	<p>
-		Auctor elementum ornare lobortis gravida morbi sociosqu diam turpis, nullam ut ultrices
-		iaculis feugiat euismod libero fermentum aenean, eleifend justo nec dignissim vitae
-		suspendisse aliquet. Bibendum laoreet class auctor risus leo primis quisque porta
-		tellus ridiculus lectus commodo, aptent odio parturient et morbi fermentum scelerisque
-		dignissim placerat nascetur. Eleifend risus enim mattis rhoncus ligula porttitor,
-		placerat habitant taciti nisl morbi nostra maecenas, nunc in augue torquent at. Metus
-		purus faucibus luctus conubia libero iaculis tortor dis dictum tristique aptent
-		blandit, ultrices mauris tincidunt enim hac et turpis aenean euismod velit inceptos,
-		non tempus nisl lectus sagittis condimentum pharetra hendrerit sodales dapibus augue.
-		Vel facilisi litora phasellus lacinia est egestas consequat felis pellentesque nostra
-		rutrum vulputate, nullam netus urna habitant cras curabitur morbi sagittis tellus
-		penatibus.
-	</p>
+	<h2>Our stack</h2>
+	<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
+		{
+			stack.map((item) => (
+				<div class="flex items-center justify-center">
+					<Image
+						src={item.src}
+						alt={item.alt}
+						width="40"
+						height="40"
+						class="grayscale w-auto"
+					/>
+				</div>
+			))
+		}
+	</div>
 
-	<p>
-		Aenean mus proin lectus orci ridiculus sollicitudin cum, fames dignissim aliquam nec
-		magnis vel pharetra condimentum, eget mattis ultricies etiam volutpat magna. In aliquet
-		sagittis arcu mus conubia risus nulla ultrices auctor, laoreet integer est sem pulvinar
-		euismod malesuada fringilla. Massa varius nulla nunc velit blandit posuere felis
-		habitant magna neque, habitasse litora suspendisse enim sapien cursus facilisi laoreet
-		hendrerit, gravida est augue sed praesent sodales orci taciti ante. Mattis bibendum
-		mauris justo pharetra varius ultricies habitant sodales duis leo magnis, maecenas
-		congue enim rutrum class laoreet est vivamus vulputate.
-	</p>
-
-	<p>
-		Mauris ultrices gravida hac aenean imperdiet, arcu ligula porta sapien congue, tempor
-		nisl litora metus. Phasellus eu himenaeos accumsan malesuada suspendisse praesent velit
-		duis tortor hendrerit erat, vitae euismod arcu luctus ac massa hac varius proin.
-	</p>
-
-	<p>
-		Aptent litora morbi ad facilisi ligula dapibus iaculis, habitasse sapien eu ante etiam
-		eros nulla nascetur, vitae dictum phasellus id nullam ac. Accumsan auctor nec libero
-		massa aliquam tristique imperdiet dis penatibus bibendum ante mauris purus viverra
-		nisl, sed magna nostra vel urna tincidunt donec integer convallis nulla ornare ligula
-		ac potenti. Maecenas libero mauris urna natoque augue vehicula, lobortis dapibus eget
-		molestie nulla proin sollicitudin, fames nisi vitae iaculis malesuada. Eget mus massa
-		venenatis placerat feugiat lacus porttitor torquent odio vehicula congue egestas,
-		inceptos vulputate praesent integer ultrices suspendisse tellus netus velit scelerisque
-		curabitur, auctor nisi himenaeos nascetur facilisis luctus ad elementum quisque tempus
-		hendrerit. Fames integer malesuada fringilla molestie nec nascetur posuere arcu
-		habitant purus, suscipit sociosqu a justo vehicula ullamcorper cum proin. Quis curae
-		phasellus convallis turpis lectus sapien rhoncus a ante semper, sociis magnis mauris
-		hendrerit himenaeos placerat odio vitae nam senectus maecenas, cras nisl tempor taciti
-		mus montes dictumst purus dis. A ultricies primis sodales porttitor tincidunt blandit
-		cubilia est, vivamus convallis porta per velit turpis potenti, venenatis nostra cursus
-		sed risus volutpat vitae. Dignissim imperdiet tempus nisl varius himenaeos feugiat
-		morbi cursus eleifend, natoque ut neque vel ridiculus ad taciti sodales, senectus
-		magnis curabitur nullam pellentesque magna justo id.
-	</p>
+	<h2>Testimonials from our team</h2>
+	<div class="not-prose grid grid-cols-1 gap-6 md:grid-cols-3 lg:-mx-24">
+		{
+			testimonials.map((testimonial) => (
+				<Card>
+					<p class="text-sm leading-6">{testimonial.text}</p>
+					<div class="flex gap-4 items-center">
+						<img
+							src={testimonial.photo}
+							alt={testimonial.name}
+							width="50"
+							height="50"
+							class="rounded-full"
+						/>
+						<div>
+							<p>{testimonial.name}</p>
+							<p class="text-sm text-gray-500">{testimonial.role}</p>
+						</div>
+					</div>
+				</Card>
+			))
+		}
+	</div>
 </ContentPage>
