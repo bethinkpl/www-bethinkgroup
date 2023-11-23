@@ -28,7 +28,7 @@
 					:key="item.name"
 					:href="item.href"
 					:class="[isActive(item.href) ? 'text-teal-600' : '']"
-					class="text-sm font-semibold leading-6 text-gray-900"
+					class="text-sm font-semibold leading-6 text-gray-900 transition-colors hover:text-teal-600"
 					>{{ item.name }}</a
 				>
 			</div>
@@ -88,7 +88,7 @@
 		{ name: 'Education', href: '/education' },
 		{ name: 'Technology', href: '/technology' },
 		{ name: 'Blog', href: '/blog' },
-		{ name: 'Join us', href: '/jobs' },
+		{ name: 'Join us', href: '/join-us' },
 	];
 
 	const mobileMenuOpen = ref(false);
