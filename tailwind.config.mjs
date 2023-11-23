@@ -18,6 +18,19 @@ export default {
 			spacing: ({ theme }) => ({
 				'layout-navbar-height': '5rem',
 			}),
+			typography: {
+				DEFAULT: {
+					css: {
+						a: {
+							color: colors.teal[600],
+							'text-decoration': 'none',
+							'&:hover': {
+								color: colors.teal[500],
+							},
+						},
+					},
+				},
+			},
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],
