@@ -7,13 +7,13 @@ heroImage: 'https://res.cloudinary.com/bethink/image/upload/c_scale,w_2000/v1686
 
 ### What is the reason for using the term "build" instead of "have"?
 
-In recent times, we have had the opportunity to engage with individuals who have encountered learning difficulties. The reasons behind such challenges can be traced to various factors, such as limited knowledge of effective learning techniques, undefined learning objectives, and studying subjects that we are not passionate about. At KLASA, our experience has demonstrated that these problems can be diverse and often linked to a person's lifestyle. However, a universal issue that affects many is a lack of motivation to learn.
+In recent times, we have had the opportunity to engage with individuals who have encountered learning difficulties. The reasons behind such challenges can be traced to various factors, such as limited knowledge of effective learning techniques, undefined learning objectives, and studying subjects that we are not passionate about. At Bethink, our experience has demonstrated that these problems can be diverse and often linked to a person's lifestyle. However, a universal issue that affects many is a lack of motivation to learn.
 
-This article serves as both a guide and a collection of experiences. Our aim is to provide a unique perspective on the concept of motivation in learning. We address this topic because motivation is often misunderstood. Most students see it as a binary concept – you either have it or you don't. This rigid viewpoint implies that motivation is something that appears out of nowhere, like a rabbit out of a hat. However, at KLASA we know that motivation is not just something that we ‘have’, but something that we build. This perspective allows us to consider how learning habits impact levels of motivation, and how learning activities can either aid or hinder motivation-building efforts.
+This article serves as both a guide and a collection of experiences. Our aim is to provide a unique perspective on the concept of motivation in learning. We address this topic because motivation is often misunderstood. Most students see it as a binary concept – you either have it or you don't. This rigid viewpoint implies that motivation is something that appears out of nowhere, like a rabbit out of a hat. However, at Bethink we know that motivation is not just something that we ‘have’, but something that we build. This perspective allows us to consider how learning habits impact levels of motivation, and how learning activities can either aid or hinder motivation-building efforts.
 
 ### What are the steps to building motivation for learning?
 
-Plentiful studies on this topic are available on the internet and in academic libraries. At KLASA, we employ a practical model that we wish to share with you. This model
+Plentiful studies on this topic are available on the internet and in academic libraries. At Bethink, we employ a practical model that we wish to share with you. This model
 benefits not only educators but students as well. It facilitates the identification of poor learning habits and deficiencies in good learning practices, which significantly impact motivation-building efforts before and during learning. Dr. Susan Ambrose, an education and history professor at Northeastern University in the United States, developed this model based on numerous studies. These studies were used to create recommendations for teachers.
 
 The model's holistic approach makes it applicable to students themselves. It identifies three categories of factors that influence our motivation levels during learning, each containing numerous activities that either promote or hinder the development of high levels of learning motivation. This is important since learning without motivation can be an unpleasant experience.
@@ -71,7 +71,7 @@ The subsequent section comprises a guide supplemented with relevant insights and
 
 ### Maintain a sense of efficacy while learning
 
-We have several ways to influence our sense of learning effectiveness. This guide will emphasize the principles of efficient learning, which can significantly boost our motivation to learn and aid us in developing successful learning experiences for the KLASA solutions users. To ensure clarity, we have categorized these principles into distinct groups.
+We have several ways to influence our sense of learning effectiveness. This guide will emphasize the principles of efficient learning, which can significantly boost our motivation to learn and aid us in developing successful learning experiences for the Bethink solutions users. To ensure clarity, we have categorized these principles into distinct groups.
 
 #### Selection of educational materials
 
@@ -87,7 +87,7 @@ We have several ways to influence our sense of learning effectiveness. This guid
 
 2. Develop a work plan based on your expected graduation date, including rest days and contingencies to catch up on material if needed. Consistently changing plans can be demotivating, so it's essential to stick to the schedule, monitor progress and make adjustments only in unexpected situations. This discipline keeps us aware of our progress and motivates us to continue learning.
 
-3. Include repetition periods in your work plan as a critical component of effective learning. Many experts recommend allocating equal time for learning new material and repetition in a 1:1 ratio. After several years of experience with course design at KLASA, we are inclined to agree. Repetition helps to systematize information, develop skills and reinforce learning. Albeit tedious, repetition positively impacts our motivation to learn. Each repetition builds confidence in our ability to master the material and retain knowledge.
+3. Include repetition periods in your work plan as a critical component of effective learning. Many experts recommend allocating equal time for learning new material and repetition in a 1:1 ratio. After several years of experience with course design at Bethink, we are inclined to agree. Repetition helps to systematize information, develop skills and reinforce learning. Albeit tedious, repetition positively impacts our motivation to learn. Each repetition builds confidence in our ability to master the material and retain knowledge.
 
 Adhere to the plan without deviation to track progress and make informed decisions. Knowing how much work remains and staying up to date motivates us to continue learning and catch up on missed material. Avoid changing the plan except in unforeseen circumstances.
 
