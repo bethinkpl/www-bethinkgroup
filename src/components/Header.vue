@@ -85,7 +85,6 @@
 
 	const navigation = [
 		{ name: 'Our story', href: '/our-story' },
-		{ name: 'Education', href: '/education' },
 		{ name: 'Technology', href: '/technology' },
 		{ name: 'Blog', href: '/blog' },
 		{ name: 'Join us', href: '/join-us' },
