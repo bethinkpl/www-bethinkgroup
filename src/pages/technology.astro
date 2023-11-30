@@ -17,6 +17,14 @@ import logoGoogleCloud from '../images/stack/Icon-Logo-Google-Cloud.svg';
 import logoGoogleBigQuery from '../images/stack/Icon-Logo-Google-BigQuery.svg';
 import logoMySQL from '../images/stack/Icon-Logo-MySQL.svg';
 
+import { SITE_TITLE } from '../consts';
+
+const meta = {
+	title: `Technology - ${SITE_TITLE}`,
+	description:
+		'Learn how we bootstrapped our way from two founders with a vision to several brands, a presence in multiple markets, and a team of over 80 people.',
+};
+
 const howWeAddressChallenges = [
 	{
 		title: 'Constant learning',
@@ -128,8 +136,8 @@ const testimonials = [
 ];
 ---
 
-<ContentPage title="Technology">
-	<p class="text-lg font-semibold">
+<ContentPage title="Technology" meta={meta}>
+	<p class="text-xl">
 		Technology is the cornerstone of Bethink's operations, propelling innovation and
 		shaping the future of e-learning. At the heart of our technological prowess is the
 		creation of Klasa, a custom platform that started as a solution for a single course and
@@ -212,7 +220,7 @@ const testimonials = [
 		}
 	</div>
 
-	<h2>Testimonials from our team</h2>
+	<h2>Testimonials</h2>
 	<div class="not-prose grid grid-cols-1 gap-6 md:grid-cols-3 lg:-mx-24">
 		{
 			testimonials.map((testimonial) => (

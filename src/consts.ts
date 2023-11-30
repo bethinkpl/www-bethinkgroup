@@ -1,5 +1,4 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = 'Astro Blog';
-export const SITE_DESCRIPTION = 'Welcome to my website!';
+export const SITE_TITLE = 'Bethink Group - E-learning reimagined';
+export const SITE_DESCRIPTION =
+	'Bethink runs multiple disruptive e-learning brands. We cover medicine, med-prep and effective learning, using our custom technology.';
+export const SITE_LINK_IMAGE = '/bethinkgroup__link_image.png';

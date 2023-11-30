@@ -1,10 +1,16 @@
 ---
 import ContentPage from '../layouts/ContentPage.astro';
 import ContentPageImage from '../components/ContentPageImage.astro';
-import HomeMission from '../sections/HomeMission.vue';
+import { SITE_TITLE } from '../consts';
+
+const meta = {
+	title: `Our story - ${SITE_TITLE}`,
+	description:
+		'Learn how we bootstrapped our way from two founders with a vision to several brands, a presence in multiple markets, and a team of over 80 people.',
+};
 ---
 
-<ContentPage title="Our story">
+<ContentPage title="Our story" meta={meta}>
 	<p class="text-xl">
 		Learn how we bootstrapped our way from two founders with a vision to several brands, a
 		presence in multiple markets, and a team of over 80 people.

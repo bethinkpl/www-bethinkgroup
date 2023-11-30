@@ -3,23 +3,22 @@ import '@fontsource/rubik/400.css';
 import '@fontsource/rubik/700.css';
 import '@fontsource/rubik/900.css';
 import { ViewTransitions } from 'astro:transitions';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { type PageMeta } from '../../src/types';
 import DefaultHead from '../components/DefaultHead.astro';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 
 interface Props {
-	title?: string;
-	description?: string;
+	meta?: Partial<PageMeta>;
 }
 
-const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+const { meta } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en" class="scroll-smooth">
 	<head>
-		<DefaultHead title={title} description={description} />
+		<DefaultHead meta={meta} />
 		<ViewTransitions />
 	</head>
 
