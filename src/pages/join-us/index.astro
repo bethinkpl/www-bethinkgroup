@@ -1,6 +1,20 @@
 ---
+import Card from '../../components/Card.astro';
 import ContentPage from '../../layouts/ContentPage.astro';
-import PrimaryButton from '../../components/PrimaryButton.astro';
+import JobsEmptyState from '../../components/jobs/JobsEmptyState.astro';
+
+import { getCollection } from 'astro:content';
+
+type ArrayElement<ArrayType extends readonly unknown[]> =
+	ArrayType extends readonly (infer ElementType)[] ? ElementType : never;
+
+const jobs = await getCollection('jobs', (job) => {
+	return !job.data.isDraft && !job.data.isArchived;
+});
+
+function getLinkToOffer(job: ArrayElement<typeof jobs>) {
+	return job.data.externalLink ? job.data.externalLink.url : `/join-us/${job.slug}`;
+}
 ---
 
 <ContentPage title="Join us">
@@ -17,14 +31,30 @@ import PrimaryButton from '../../components/PrimaryButton.astro';
 		alt=""
 		class="aspect-[5/2] w-full object-cover rounded-xl xl:rounded-3xl"
 	/>
+
 	<h2>Open positions</h2>
-	<div class="not-prose py-6 flex flex-col text-center">
-		<p class="text-lg font-semibold">Sorry, there are no open positions right now.</p>
-		<p class="mt-2">Let's be in touch, though!</p>
-		<p class="mt-4">
-			<PrimaryButton href="https://forms.gle/g3agz4oTdz7mPApH6" target="_blank">
-				Leave contact info
-			</PrimaryButton>
-		</p>
-	</div>
+
+	{
+		jobs && jobs.length > 0 && (
+			<ul class="not-prose">
+				{jobs.map((job) => (
+					<a
+						href={getLinkToOffer(job)}
+						class="group"
+						target={job.data.externalLink ? '_blank' : '_self'}
+					>
+						<Card isHoverable={true}>
+							<h3 class="text-xl font-bold group-hover:text-link">
+								{job.data.title}
+							</h3>
+							<p class="text-sm">{job.data.salaryRange}</p>
+							<p>{job.data.excerpt}</p>
+						</Card>
+					</a>
+				))}
+			</ul>
+		)
+	}
+
+	{(!jobs || jobs.length === 0) && <JobsEmptyState />}
 </ContentPage>

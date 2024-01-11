@@ -12,4 +12,31 @@ const blog = defineCollection({
 	}),
 });
 
-export const collections = { blog };
+const jobs = defineCollection({
+	schema: z.object({
+		meta: z.object({
+			title: z.string(),
+			description: z.string(),
+			linkImageUrl: z.string(),
+		}),
+		title: z.string(),
+		excerpt: z.string(),
+		salaryRange: z.string(),
+		isRemote: z.boolean().optional(),
+		externalLink: z
+			.object({
+				text: z.string(),
+				url: z.string().url(),
+			})
+			.optional(),
+		isDraft: z.boolean(),
+		isOpen: z.boolean(),
+		isArchived: z.boolean(),
+		heroImage: z.object({
+			url: z.string(),
+			alt: z.string().optional(),
+		}),
+	}),
+});
+
+export const collections = { blog, jobs };

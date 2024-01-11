@@ -29,6 +29,7 @@
 					:href="item.href"
 					:class="[isActive(item.href) ? 'text-teal-600' : '']"
 					class="text-sm font-semibold leading-6 text-gray-900 transition-colors hover:text-teal-600"
+					:target="item.newTab ? '_blank' : '_self'"
 					>{{ item.name }}</a
 				>
 			</div>
@@ -66,6 +67,7 @@
 							:href="item.href"
 							:class="[isActive(item.href) ? 'text-teal-600' : '']"
 							class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+							:target="item.newTab ? '_blank' : '_self'"
 						>
 							{{ item.name }}
 						</a>
@@ -86,8 +88,8 @@
 	const navigation = [
 		{ name: 'Our story', href: '/our-story' },
 		{ name: 'Technology', href: '/technology' },
-		{ name: 'Blog', href: '/blog' },
 		{ name: 'Join us', href: '/join-us' },
+		{ name: 'Blog', href: 'https://medium.com/bethink-pl', newTab: true },
 	];
 
 	const mobileMenuOpen = ref(false);

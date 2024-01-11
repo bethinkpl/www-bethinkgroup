@@ -1,1 +1,16 @@
-<div class="flex flex-col gap-4 rounded-lg shadow-lg ring-1 ring-gray-100 p-6"><slot /></div>
+---
+interface Props {
+	isHoverable?: boolean;
+}
+
+const { isHoverable = false } = Astro.props;
+---
+
+<div
+	class:list={{
+		'flex flex-col gap-4 rounded-lg shadow-lg ring-1 ring-gray-100 p-6': true,
+		'transition-all hover:shadow-xl': isHoverable,
+	}}
+>
+	<slot />
+</div>

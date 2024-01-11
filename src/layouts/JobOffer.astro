@@ -1,0 +1,23 @@
+---
+import DefaultLayout from './DefaultLayout.astro';
+import type { CollectionEntry } from 'astro:content';
+
+type Props = CollectionEntry<'jobs'>['data'];
+
+const { meta, title, excerpt, salaryRange, heroImage } = Astro.props;
+---
+
+<DefaultLayout meta={{ title, description: excerpt, image: heroImage.url }}>
+	<article class="max-w-3xl mx-auto py-16 px-4">
+		<div class="py-4">
+			<a href="/join-us">&larr; Back to Open positions</a>
+		</div>
+		<div class="flex flex-col gap-2 py-6">
+			<h1 class="font-bold text-2xl lg:text-4xl">{title}</h1>
+		</div>
+		<hr />
+		<div class="prose mx-auto mt-6">
+			<slot />
+		</div>
+	</article>
+</DefaultLayout>
