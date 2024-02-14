@@ -46,8 +46,8 @@
 
 <script setup lang="ts">
 	const stats = [
-		{ label: 'Yearly active students', value: '17,000+' },
+		{ label: 'Yearly active students', value: '19,000+' },
 		{ label: 'Average course satisfaction', value: '93%+' },
-		{ label: 'Current headcount', value: '80+' },
+		{ label: 'Current headcount', value: '95+' },
 	];
 </script>
