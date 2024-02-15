@@ -74,6 +74,13 @@
 <script setup lang="ts">
 	const projects = [
 		{
+			logo: 'https://res.cloudinary.com/bethink/image/upload/v1708011344/medcourses_logo_t5ntdc.png',
+			name: 'Medcourses',
+			website: 'https://medcourses.com',
+			description:
+				'An international brand for scaling our medical education endeavour. Expected to premiere in Q4 of 2026.',
+		},
+		{
 			logo: 'https://wiecejnizlek.pl/wp-content/uploads/2019/01/normal.svg',
 			name: 'Więcej niż LEK',
 			website: 'https://wiecejnizlek.pl',
@@ -100,13 +107,6 @@
 			website: 'https://najprosciejmowiac.pl',
 			description:
 				'An emerging health education portal for patients. Started as an educative YouTube channel, Najprościej Mówiąc aims at being a widespread and trusted source.',
-		},
-		{
-			logo: '/bethinkgroup__logo.png',
-			name: 'Bethink.space',
-			website: 'https://bethink.space',
-			description:
-				'A space created for an online course on effective learning. Based on the latest scientific research and our methodology, the course helps people fall in love with learning.',
 		},
 		{
 			logo: 'https://klasa.io/images/klasa-logo-horizontal.svg',
