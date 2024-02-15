@@ -46,9 +46,14 @@
 					class="p-6 flex flex-col gap-6 shadow rounded-lg bg-background border border-gray-100"
 				>
 					<dt class="flex justify-between">
-						<span class="text-xl font-bold">
-							{{ project.name }}
-						</span>
+						<div class="flex flex-col">
+							<span class="text-xl font-bold">
+								{{ project.name }}
+							</span>
+							<span class="text-sm text-gray-600 mt-1" v-if="project.eyebrow">
+								{{ project.eyebrow }}
+							</span>
+						</div>
 						<img
 							class="object-contain"
 							:src="project.logo"
@@ -82,6 +87,7 @@
 		},
 		{
 			logo: 'https://wiecejnizlek.pl/wp-content/uploads/2019/01/normal.svg',
+			eyebrow: 'More than Medicine',
 			name: 'Więcej niż LEK',
 			website: 'https://wiecejnizlek.pl',
 			description:
@@ -89,6 +95,7 @@
 		},
 		{
 			logo: 'https://wiecejnizmatura.pl/wp-content/uploads/2022/05/img-1.png',
+			eyebrow: 'More than High School',
 			name: 'Więcej niż Matura',
 			website: 'https://wiecejnizmatura.pl',
 			description:
@@ -96,6 +103,7 @@
 		},
 		{
 			logo: 'https://twojdyzur.pl/wp-content/uploads/2019/04/Logo.svg',
+			eyebrow: 'Your ER',
 			name: 'Twój Dyżur',
 			website: 'https://twojdyzur.pl',
 			description:
@@ -103,6 +111,7 @@
 		},
 		{
 			logo: 'https://najprosciejmowiac.pl/wp-content/uploads/2023/07/logo.png',
+			eyebrow: 'Simply Medicine',
 			name: 'Najprościej Mówiąc',
 			website: 'https://najprosciejmowiac.pl',
 			description:
