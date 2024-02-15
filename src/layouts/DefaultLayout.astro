@@ -23,6 +23,14 @@ const { meta } = Astro.props;
 	</head>
 
 	<body class="bg-canvas text-text">
+		<noscript>
+			<iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-5NB2ZP64"
+				height="0"
+				width="0"
+				style="display:none;visibility:hidden"></iframe>
+		</noscript>
+
 		<Header client:only />
 		<main class="relative isolate z-0">
 			<slot />
