@@ -91,7 +91,7 @@
 			name: 'Więcej niż LEK',
 			website: 'https://wiecejnizlek.pl',
 			description:
-				'Leading provider of e-learning education for medical students and practitioners. Managing 15 courses and serving over 9,000 students every year.',
+				'Leading provider of e-learning education for medical students and practitioners. Managing 17 courses and serving over 14,000 students every year.',
 		},
 		{
 			logo: 'https://wiecejnizmatura.pl/wp-content/uploads/2022/05/img-1.png',
