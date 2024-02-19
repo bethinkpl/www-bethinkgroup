@@ -83,7 +83,7 @@
 			name: 'Medcourses',
 			website: 'https://medcourses.com',
 			description:
-				'An international brand for scaling our medical education endeavour. Expected to launch in Q4 of 2026.',
+				'An international brand for scaling our medical education endeavour. Expected to launch in Q2 of 2026.',
 		},
 		{
 			logo: 'https://wiecejnizlek.pl/wp-content/uploads/2019/01/normal.svg',
