@@ -4,7 +4,7 @@
 			<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
 				Our mission
 			</h2>
-			<div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
+			<div class="mt-6 flex flex-col gap-x-16 gap-y-20 lg:flex-row">
 				<div class="lg:w-full lg:max-w-2xl lg:flex-auto">
 					<p class="text-lg leading-8 text-gray-600">
 						Education → Freedom → Happiness
@@ -25,10 +25,22 @@
 						</p>
 					</div>
 				</div>
-				<div class="lg:flex lg:flex-auto lg:justify-center">
-					<dl class="w-64 space-y-8 xl:w-80">
+				<div class="flex flex-col gap-8 sm:flex-row lg:flex-auto lg:justify-center">
+					<dl class="w-64 space-y-8 xl:w-64">
 						<div
-							v-for="stat in stats"
+							v-for="stat in stats_1"
+							:key="stat.label"
+							class="flex flex-col-reverse gap-y-4"
+						>
+							<dt class="text-base leading-7 text-gray-600">{{ stat.label }}</dt>
+							<dd class="text-5xl font-semibold tracking-tight text-gray-900">
+								{{ stat.value }}
+							</dd>
+						</div>
+					</dl>
+					<dl class="w-64 space-y-8 xl:w-64">
+						<div
+							v-for="stat in stats_2"
 							:key="stat.label"
 							class="flex flex-col-reverse gap-y-4"
 						>
@@ -45,9 +57,14 @@
 </template>
 
 <script setup lang="ts">
-	const stats = [
-		{ label: 'Yearly active students', value: '19,000+' },
-		{ label: 'Average course satisfaction', value: '93%+' },
+	const stats_1 = [
+		{ label: 'Yearly active students', value: '14k+' },
+		{ label: 'Number of alumni', value: '28k+' },
+		{ label: 'MedEd market share in Poland', value: '71%' },
+	];
+	const stats_2 = [
+		{ label: 'Average course NPS', value: '72' },
+		{ label: 'Average course satisfaction', value: '94%' },
 		{ label: 'Current headcount', value: '95+' },
 	];
 </script>
