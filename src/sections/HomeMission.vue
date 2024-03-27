@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+	<div class="mx-auto mb-32 max-w-7xl px-6 sm:mb-48 lg:px-8">
 		<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
 			<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
 				Our mission
