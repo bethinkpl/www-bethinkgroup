@@ -12,6 +12,10 @@ const jobs = await getCollection('jobs', (job) => {
 	return !job.data.isDraft && !job.data.isArchived;
 });
 
+const archived = await getCollection('jobs', (job) => {
+	return !job.data.isDraft && job.data.isArchived;
+});
+
 function getLinkToOffer(job: ArrayElement<typeof jobs>) {
 	return job.data.externalLink ? job.data.externalLink.url : `/join-us/${job.slug}`;
 }
@@ -57,4 +61,28 @@ function getLinkToOffer(job: ArrayElement<typeof jobs>) {
 	}
 
 	{(!jobs || jobs.length === 0) && <JobsEmptyState />}
+
+	<h2>Archived offers</h2>
+
+	{
+		archived && archived.length > 0 && (
+			<ul class="not-prose">
+				{archived.map((job) => (
+					<a
+						href={getLinkToOffer(job)}
+						class="group"
+						target={job.data.externalLink ? '_blank' : '_self'}
+					>
+						<Card isHoverable={true}>
+							<h3 class="text-xl font-bold group-hover:text-link">
+								{job.data.title}
+							</h3>
+							<p class="text-sm">{job.data.salaryRange}</p>
+							<p>{job.data.excerpt}</p>
+						</Card>
+					</a>
+				))}
+			</ul>
+		)
+	}
 </ContentPage>

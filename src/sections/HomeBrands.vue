@@ -35,8 +35,7 @@
 					Our brands
 				</h2>
 				<p class="mt-6 text-lg leading-8 text-gray-600">
-					Bethink group consists of several brands, with a few market leaders among
-					them.
+					Bethink Group manages several brands, with a few market leaders among them.
 				</p>
 			</div>
 			<div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">

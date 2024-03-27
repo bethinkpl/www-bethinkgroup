@@ -12,7 +12,7 @@ externalLink:
     url: https://justjoin.it/offers/bethink-senior-full-stack-developer-poznan
 isDraft: false
 isOpen: false
-isArchived: false
+isArchived: true
 heroImage:
     url: asdf
     alt: asdf
