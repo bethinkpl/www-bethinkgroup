@@ -77,13 +77,13 @@
 </template>
 <script setup lang="ts">
 	const projects = [
-		{
-			logo: 'https://res.cloudinary.com/bethink/image/upload/v1708011344/medcourses_logo_t5ntdc.png',
-			name: 'Medcourses',
-			website: 'https://medcourses.com',
-			description:
-				'An international brand for scaling our medical education endeavour. Expected to launch in Q2 of 2026.',
-		},
+		// {
+		// 	logo: 'https://res.cloudinary.com/bethink/image/upload/v1708011344/medcourses_logo_t5ntdc.png',
+		// 	name: 'Medcourses',
+		// 	website: 'https://medcourses.com',
+		// 	description:
+		// 		'An international brand for scaling our medical education endeavour. Expected to launch in Q2 of 2026.',
+		// },
 		{
 			logo: 'https://wiecejnizlek.pl/wp-content/uploads/2019/01/normal.svg',
 			eyebrow: 'More than Medicine',
@@ -116,12 +116,12 @@
 			description:
 				'An emerging health education portal for patients. Started as an educative YouTube channel, Najprościej Mówiąc aims at being a widespread and trusted source.',
 		},
-		{
-			logo: 'https://klasa.io/images/klasa-logo-horizontal.svg',
-			name: 'Klasa',
-			website: 'https://klasa.io',
-			description:
-				'Our custom e-learning platform that utilizes atomic content - a revolutionary approach to creation of educational experiences with unique analytical capabilities.',
-		},
+		// {
+		// 	logo: 'https://klasa.io/images/klasa-logo-horizontal.svg',
+		// 	name: 'Klasa',
+		// 	website: 'https://klasa.io',
+		// 	description:
+		// 		'Our custom e-learning platform that utilizes atomic content - a revolutionary approach to creation of educational experiences with unique analytical capabilities.',
+		// },
 	];
 </script>
