@@ -93,7 +93,7 @@
 				'Leading provider of e-learning education for medical students and practitioners. Managing 17 courses and serving over 14,000 students every year.',
 		},
 		{
-			logo: 'https://wiecejnizmatura.pl/wp-content/uploads/2022/05/img-1.png',
+			logo: 'https://cms.landing.bethink.tech/assets/logo/wnm-logo.svg',
 			eyebrow: 'More than High School',
 			name: 'Więcej niż Matura',
 			website: 'https://wiecejnizmatura.pl',

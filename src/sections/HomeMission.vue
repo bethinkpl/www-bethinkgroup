@@ -58,13 +58,13 @@
 
 <script setup lang="ts">
 	const stats_1 = [
-		{ label: 'Yearly active students', value: '14k+' },
+		{ label: 'Yearly active students', value: '20k+' },
 		{ label: 'Number of alumni', value: '40k+' },
 		{ label: 'MedEd market share in Poland', value: '71%' },
 	];
 	const stats_2 = [
 		{ label: 'Average course NPS', value: '72' },
 		{ label: 'Average course satisfaction', value: '94%' },
-		{ label: 'Current headcount', value: '130+' },
+		{ label: 'Current headcount', value: '170+' },
 	];
 </script>
