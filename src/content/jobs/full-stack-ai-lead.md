@@ -12,7 +12,7 @@ externalLink:
     url: https://justjoin.it/job-offer/bethink-fullstack-ai-lead-poznan-ai
 isDraft: false
 isOpen: true
-isArchived: false
+isArchived: true
 heroImage:
     url: asdf
     alt: asdf
