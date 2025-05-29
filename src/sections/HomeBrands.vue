@@ -85,7 +85,7 @@
 		// 		'An international brand for scaling our medical education endeavour. Expected to launch in Q2 of 2026.',
 		// },
 		{
-			logo: 'https://wiecejnizlek.pl/wp-content/uploads/2019/01/normal.svg',
+			logo: 'https://cms.landing.bethink.tech/assets/logo/wnl-logo.svg',
 			eyebrow: 'More than Medicine',
 			name: 'Więcej niż LEK',
 			website: 'https://wiecejnizlek.pl',
