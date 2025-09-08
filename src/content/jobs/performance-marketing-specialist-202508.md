@@ -4,7 +4,7 @@ meta:
     description: Świetny developer dla każdego - starego i młodego
     linkImageUrl: asdfasdf
 title: Performance Marketing Specialist
-excerpt: Nowoczesny stack, doświadczony zespół i praca nad real-time’ową, społecznościową aplikacją do e-learningu. Rozwijaj aplikację, na której prowadzone są największe w Polsce kursy online z dziedziny medycyny i fizjoterapii.
+excerpt: Rozwijaj kampanie reklamowe dla naszych polskich marek i zagranicznych marek. To rola dla osoby, która chce mieć realny wpływ na wyniki, działać strategicznie i współtworzyć długofalowy sukces.
 salaryRange: 11 000 - 13 000 zł brutto UOP / 10 700 - 12 700 zł netto B2B
 isRemote: true
 isDraft: false
