@@ -8,8 +8,8 @@ excerpt: Rozwijaj kampanie reklamowe dla naszych polskich marek i zagranicznych 
 salaryRange: 11 000 - 13 000 zł brutto UOP / 10 700 - 12 700 zł netto B2B
 isRemote: true
 isDraft: false
-isOpen: true
-isArchived: false
+isOpen: false
+isArchived: true
 heroImage:
     url: asdf
     alt: asdf
