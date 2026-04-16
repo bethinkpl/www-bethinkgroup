@@ -2,8 +2,8 @@
 	<!-- Image section -->
 	<div class="mt-32 sm:mt-40 lg:mx-auto lg:max-w-7xl lg:px-8">
 		<img
-			src="https://bethink.space/wp-content/uploads/2021/12/zdjecia_Bethink064-scaled.jpg"
-			alt=""
+			src="https://res.cloudinary.com/bethink/image/upload/v1776372465/bethink__whole_company_1_1_jd21ff.jpg"
+			alt="Bethink company photo"
 			class="aspect-[5/2] w-full object-cover lg:rounded-3xl"
 		/>
 	</div>
