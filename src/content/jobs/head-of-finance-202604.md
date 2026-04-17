@@ -31,7 +31,7 @@ Przejmij odpowiedzialność za poprowadzenie działu finansowego w 180-osobowej 
 
 🌍 Wymagana pełna biegłość zawodowa w języku angielskim
 
-**LINK DO FORMULARZA REKRUTACYJNEGO: https://bit.ly/4muLuPM 👈**
+**LINK DO FORMULARZA REKRUTACYJNEGO: https://bit.ly/4cscnyZ 👈**
 
 ---
 
@@ -169,7 +169,7 @@ Wierzymy w transparentność - i traktujemy ją serio. Każda osoba w Bethink ma
 
 Wystarczy, że w formularzu rekrutacyjnym podasz dane do kontaktu, a chętnie opowiemy więcej.
 
-**LINK DO FORMULARZA REKRUTACYJNEGO: https://bit.ly/4muLuPM 👈**
+**LINK DO FORMULARZA REKRUTACYJNEGO: https://bit.ly/4cscnyZ 👈**
 
 ### Jak wygląda rekrutacja:
 
