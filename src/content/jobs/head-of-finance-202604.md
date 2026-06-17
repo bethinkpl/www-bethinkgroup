@@ -8,8 +8,8 @@ excerpt: Przejmij odpowiedzialność za poprowadzenie działu finansowego w 180-
 salaryRange: 22 000 - 27 000 zł netto B2B lub brutto UOP
 isRemote: true
 isDraft: false
-isOpen: true
-isArchived: false
+isOpen: false
+isArchived: true
 heroImage:
     url: asdf
     alt: asdf
